@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="./vendor/grid/flexboxgrid.css" type="text/css">
   <link rel="stylesheet" href="./vendor/normalize/normalize.css" type="text/css">
+  <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
 <body>
@@ -17,7 +18,7 @@
         <span>Start bootstrap</span>
       </div>
       <div class="col-xs-6 center-xs col-sm-6 end-sm col-md-4 center-md col-lg-4 center-lg">
-        <button class="burger-menu">Menu</button>
+        <button class="burger-menu"><i class="fa fa-bars" aria-hidden="true"></i>Menu</button>
       </div>
       <div class="col-md-4 center-md col-lg-4 center-lg">
         <ul class="main-nav">
@@ -37,7 +38,7 @@
         </picture>
         <h1>Start bootstrap</h1>
         <span class="left-line"></span>
-        <i></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
         <span class="right-line"></span>
         <p>Web Developer - Graphic Artist - User Experience Designer</p>
       </div>
@@ -49,26 +50,55 @@
       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2>Portfolio</h2>
         <span class="left-line"></span>
-        <i></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
         <span class="right-line"></span>
       </div>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+
+      <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <picture class="portfolio-works">
           <a href="#">
-            <source srcset="src/img/portfolio/cabin.svg" width="360" height="260">
-            <img src="src/img/portfolio/cabin.png" alt="cabin" width="360" height="260">
+            <source srcset="./img/svg/cabin.svg" width="360" height="260">
+            <img src="./img/png/cabin.png" alt="cabin" width="360" height="260">
           </a>
         </picture>
+
+        <picture class="profile-logo">
+          <source srcset="./img/svg/cake.svg" width="360" height="260">
+          <img src="./img/png/cake.png" alt="cabin" width="360" height="260">
+        </picture>
+
+        <picture class="profile-logo">
+          <source srcset="./img/svg/circus.svg" width="360" height="260">
+          <img src="./img/png/circus.png" alt="cabin" width="360" height="260">
+        </picture>
+
+        <picture class="profile-logo">
+          <source srcset="./img/svg/game.svg" width="360" height="260">
+          <img src="./img/png/game.png" alt="cabin" width="360" height="260">
+        </picture>
+
+        <picture class="profile-logo">
+          <source srcset="./img/svg/safe.svg" width="360" height="260">
+          <img src="./img/png/safe.png" alt="cabin" width="360" height="260">
+        </picture>
+
+        <picture class="profile-logo">
+          <source srcset="./img/svg/submarine.svg" width="360" height="260">
+          <img src="./img/png/submarine.png" alt="cabin" width="360" height="260">
+        </picture>
       </div>
+      </div>
+
     </div>
   </div>
 
   <div class="container">
     <div class="row center-xs center-sm center-md center-lg">
-      <div class="col-xs-12">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <h2>About</h2>
         <span class="left-line"></span>
-        <i></i>
+        <i class="fa fa-star" aria-hidden="true"></i>
         <span class="right-line"></span>
         <div class="row">
           <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
@@ -82,15 +112,76 @@
             looking to share your projects, this template is the perfect starting point!</p>
           </div>
         </div>
-        <button class="download-btn">Download Theme</button>
+        <button class="download-btn"><i class="fa fa-download" aria-hidden="true"></i>Download Theme</button>
       </div>
     </div>
   </div>
 
   <div class="container">
-    <div class="row">
-      <div class="">
+    <div class="row center-xs center-sm center-md center-lg">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h2>Contact me</h2>
+        <span class="left-line"></span>
+        <i class="fa fa-star" aria-hidden="true"></i>
+        <span class="right-line"></span>
+        <form action="" class="form">
+          <input type="text" name="Name" placeholder="Name">
+          <input type="email" name="Email Adress" placeholder="Email Adress">
+          <input type="number" name="Phone Number" placeholder="Phone Number">
+          <textarea name="message" rows="5" cols="40" placeholder="Message"></textarea>
+          <input type="submit" name="Send" value="Send">
+        </form>
+      </div>
+    </div>
+  </div>
 
+  <div class="container">
+    <div class="row center-xs center-sm center-md center-lg">
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <h3>Location</h3>
+        <p>3481 Melrose Place Beverly Hills, CA 90210</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <h3>Around the web</h3>
+        <ul class="icons">
+          <li>
+            <a href="https://www.facebook.com/">
+              <i class="fa fa-fw fa-facebook" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://plus.google.com/discover">
+              <i class="fa fs-fw fa-google-plus" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/">
+              <i class="fa fs-fw fa-twitter" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="http://www.linkedin.com/">
+              <i class="fa fa-fw fa-linkedin" aria-hidden="true"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://dribbble.com/">
+              <i class="fa fs-fw fa-dribbble" aria-hidden="true"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+        <h3>About freelancer</h3>
+        <p class="link">Freelance is a free to use, open source Bootstrap theme created by
+        <a href="#">Start Bootstrap</a>.</p>
+      </div>
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p class="copyright">Copyright &copy; Your Website 2017</p>
       </div>
     </div>
   </div>
