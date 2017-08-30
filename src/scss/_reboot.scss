@@ -1,0 +1,144 @@
+/* Normalization of HTML elements */
+
+//
+//Document
+//
+
+//1.Изменение значения `box-sizing: content-box`, чтобы на` width` не влияли `padding` или` border`.
+//2.Изменение семейства шрифтов по умолчанию во всех браузерах.
+//3.Корректировка высоты строки во всех браузерах.
+//4.Запрещение корректировки размера шрифта после изменения ориентации в IE на Windows Phone и в iOS.
+//5.Установка @viewport, потому что полосы прокрутки перекрывают контент в IE11 и Edge, полосы прокрутки
+// не перекрывают содержимое и, следовательно, занимают дополнительное пространство макета по краям элемента,
+// где они появляются.
+//6.Изменeние выделения по умолчанию, чтобы оно было полностью прозрачным в iOS.
+
+html {
+  box-sizing: content-box;         // 1
+  font-family: sans-serif;         // 2
+  line-height: 1.5;                // 3
+  -webkit-text-size-adjust: 100%;  // 4
+  -ms-text-size-adjust: 100%;      // 4
+  -ms-overflow-style: scrollbar;   // 5
+  -webkit-tap-hightlight-color: rgba(0, 0, 0, 0); //6
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+//Дикертива, которая изымает правило @-ms-viewport из родительского селектора в корневой уровень документа для IE11 и Edge.
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
+
+//Структурные элементы HTML5 для корректного отображения (IE10, более старые браузеры).
+header, footer, nav, section {
+  display: block;
+}
+
+//Boby style
+body {
+  margin: 0;
+  font-family: ;
+  font-size: ;
+  font-weight: ;
+  line-height: ;
+  color: ;
+  background-color: ;
+}
+
+//
+//Typography
+//
+
+//Удаление верхних маржинов из заголовков.
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+//Сброс маржинов в параграфах.
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+//
+//Links
+//
+
+a {
+  color: ;
+  text-decoration: ;
+  background-color: transparent;         //Удаляет серый фон активных ссылок в IE 10.
+  -webkit-text-decoration-skip: objects; //Удаляет пробелы в подчеркивании в ссылках в iOS 8+ и Safari 8+.
+
+  @include link-hover {
+    color: ;
+    text-decoration: ;
+  }
+}
+
+
+//
+// Изображения
+//
+
+img {
+  vertical-align: center;
+  border-style: none;     //Удаляет границы изображений внутри ссылок в IE 10-.
+}
+
+
+//
+//Формы
+//
+
+button,
+input,
+textarea {
+  margin: 0;            //Удаляет маржины в Firefox и Safari.
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible; //Показывает переполнение в Edge.
+}
+
+button {
+  text-transform: none; //Удаляет наследование текстового преобразования в Firefox.
+}
+
+button,
+[type="submit"] {
+  -webkit-appearence: button; //Исправляет неспособность стилизовать сликабельные типы в iOS и Safari.
+}
+
+//Удаляет внутреннюю границу и отступы из Firefox.
+button::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+textarea {
+  overflow: auto; //Удаляет вертикальную полосу прокрутки по умолчанию в IE.
+  resize: vertical;
+}
+
+//Исправляет стиль курсора кнопок увеличения и уменьшения в Chrome.
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+::-webkit-file-upload-button {
+  font: inherit; // Изменяет свойства шрифта на `inherit` в Safari.
+  -webkit-appearance: button; // Исправяет неспособность стилировать кликабельные типы в iOS и Safari.
+}

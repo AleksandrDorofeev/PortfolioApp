@@ -1,0 +1,16 @@
+/* Hover */
+
+@mixin link-hover ($link, $visited: $link, $hover: $link, $active: $link) {
+  & {
+    color: $link;
+    &:visited {
+        color: $visited;
+    }
+    &:hover {
+        color: $hover;
+    }
+    &:active, &:focus {
+        color: $active;
+    }
+  }
+}
