@@ -1,1 +1,92 @@
 /*all import*/
+/* Variables */
+/* Color system */
+/* Layout colors */
+/* Spacing */
+/* Body */
+/* Fonts */
+/* Buttons */
+/* Forms */
+/* Z-index */
+/* Normalization of HTML elements */
+html {
+  box-sizing: content-box;
+  font-family: sans-serif;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-hightlight-color: transparent; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+@-ms-viewport {
+  width: device-width; }
+
+header, footer, nav, section {
+  display: block; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  color: #fff; }
+
+h1, h2, h3 {
+  margin-top: 0;
+  margin-bottom: .5rem; }
+
+p {
+  margin: 0;
+  margin-bottom: 1rem; }
+
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects; }
+
+img {
+  vertical-align: center;
+  border-style: none; }
+
+button,
+input,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit; }
+
+button,
+input {
+  overflow: visible; }
+
+button {
+  text-transform: none; }
+
+button,
+[type="submit"] {
+  -webkit-appearence: button; }
+
+button::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none; }
+
+textarea {
+  overflow: auto;
+  resize: vertical; }
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button; }
+
+/*Sizing shortcut*/

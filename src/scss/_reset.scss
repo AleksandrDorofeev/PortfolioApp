@@ -42,12 +42,11 @@ header, footer, nav, section {
 //Body style
 body {
   margin: 0;
-  font-family: ;
-  font-size: ;
-  font-weight: ;
-  line-height: ;
-  color: ;
-  background-color: ;
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  font-weight: $font-weight-normal;
+  line-height: $line-height;
+  color: $body-bg;
 }
 
 //
@@ -71,15 +70,8 @@ p {
 //
 
 a {
-  color: ;
-  text-decoration: ;
   background-color: transparent;         //Удаляет серый фон активных ссылок в IE 10.
   -webkit-text-decoration-skip: objects; //Удаляет пробелы в подчеркивании в ссылках в iOS 8+ и Safari 8+.
-
-  @include link-hover {
-    color: ;
-    text-decoration: ;
-  }
 }
 
 

@@ -1,3 +1,7 @@
 /*all import*/
+@import "_variables";
+@import "_reset";
 
-@import "reboot";
+@import "_functions";
+
+@import "mixins/_size";
