@@ -1,0 +1,12 @@
+nav {
+  margin-top: $unit / 2;
+  a {
+    margin-right: $unit / 2;
+    letter-spacing: 0.07rem;
+    font-size: $font-size-md;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: $white;
+  }
+}

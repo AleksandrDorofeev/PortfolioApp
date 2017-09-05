@@ -1,0 +1,29 @@
+.portfolio .container {
+  padding-top: 5.5rem;
+  h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: $gray-900;
+  }
+  hr {
+    margin-top: 1.15rem;
+    margin-bottom: 1.8rem;
+    color: $gray-900;
+    &:after {
+      background-color: $white;
+      color: $gray-900;
+    }
+  }
+  div {
+    padding-right: 0.5rem;
+    .profile-logo {
+      margin-left: 0.7rem;
+      margin-right: 0.7rem;
+      line-height: 0;
+      &:nth-child(n + 6) {
+        margin-left: 0.3rem;
+        margin-right: 0.3rem;
+      }
+    }
+  }
+}

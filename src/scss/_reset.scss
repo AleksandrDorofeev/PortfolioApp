@@ -46,7 +46,7 @@ body {
   font-size: $font-size-base;
   font-weight: $font-weight-normal;
   line-height: $line-height;
-  color: $body-bg;
+  background-color: $body-bg;
 }
 
 //
@@ -64,6 +64,14 @@ p {
   margin: 0;
   margin-bottom: 1rem;
 }
+
+hr {
+  box-sizing: content-box; // 1
+  height: 0; // 1
+  overflow: visible; // 2
+}
+// 1. Add the correct box sizing in Firefox.
+// 2. Show the overflow in Edge and IE.
 
 //
 //Links

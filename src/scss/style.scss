@@ -1,7 +1,15 @@
 /*all import*/
 @import "_variables";
 @import "_reset";
+@import "mixins/_size";
 
 @import "_functions";
 
-@import "mixins/_size";
+@import "elements/_container";
+@import "elements/_hr";
+
+@import "components/_nav";
+
+@import "layout/_header";
+@import "layout/_main-logo";
+@import "layout/_portfolio";
