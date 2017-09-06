@@ -2,11 +2,13 @@ let gulp = require('gulp'),
     sass = require('gulp-sass'),
     browserSync = require('browser-sync'),
     imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant');
+    pngquant = require('imagemin-pngquant'),
+    autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('sass', () => {
   return gulp.src('src/scss/**/*.scss')
         .pipe (sass())
+        .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
         .pipe(gulp.dest('public/css'))
         .pipe(browserSync.reload({stream: true}))
 });

@@ -10,7 +10,8 @@
 /* Z-index */
 /* Normalization of HTML elements */
 html {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   font-family: sans-serif;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
@@ -21,7 +22,8 @@ html {
 *,
 *::before,
 *::after {
-  box-sizing: inherit; }
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 @-ms-viewport {
   width: device-width; }
@@ -46,7 +48,8 @@ p {
   margin-bottom: 1rem; }
 
 hr {
-  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
   height: 0;
   overflow: visible; }
 
