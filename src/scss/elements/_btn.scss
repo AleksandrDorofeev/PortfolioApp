@@ -1,0 +1,38 @@
+.download-btn {
+  height: 50px;
+  width: 210px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $white;
+  background-color: $green;
+  border: 2px solid $white;
+  border-radius: $border-radius;
+  outline: 0;
+  z-index: 1000;
+  transition: background 0.5s ease;
+  &:hover {
+    color: $green;
+    background-color: $white;
+  }
+}
+
+.form input[type="submit"] {
+  display: block;
+  margin-top: 1.5625rem;
+  height: 50px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 19px;
+  font-weight: 400;
+  color: $white;
+  background-color: $green;
+  border: 1px solid $green;
+  border-radius: $border-radius;
+  outline: none;
+  &:hover {
+    box-shadow: 0 0 0 100px rgba(0, 0, 0, 0.33) inset;
+    border: 1px solid rgb(17,134,111);
+    transition: all 0.5s;
+  }
+}

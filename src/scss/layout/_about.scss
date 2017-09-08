@@ -1,0 +1,77 @@
+.about .container {
+  padding-top: 5.5rem;
+  padding-bottom: 5.5rem;
+  background-color: $green;
+  h2 {
+    font-size: 3rem;
+    text-transform:uppercase;
+    color: $white;
+  }
+  hr {
+    margin-top: 1.5rem;
+    margin-bottom: 1.8rem;
+    color: $white;
+    &:after {
+      background-color: $green;
+      color: $white;
+    }
+  }
+  .row {
+    margin-bottom: 1.5rem;
+  }
+  @media only screen and (min-width: 75em){
+    .left {
+      hyphens: auto;
+      margin-left: 13.75rem; //220px
+      width: 380px;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
+    }
+    .right {
+      margin-left: 1rem;
+      hyphens: auto;
+      width: 380px;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
+    }
+  }
+  @media only screen and (min-width: 64em) and (max-width: 75em) {
+    .left {
+      hyphens: auto;
+      margin-left: 8.125rem; //130px
+      width: 380px;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
+    }
+    .right {
+      hyphens: auto;
+      width: 365px;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
+    }
+  }
+  @media only screen and (max-width: 64em) {
+    .left {
+      hyphens: auto;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
+    }
+    .right {
+      hyphens: auto;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
+    }
+  }
+}

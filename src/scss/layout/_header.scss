@@ -14,6 +14,16 @@ body {
            font-size: $font-size-lg * 1.60;
            color: $white;
         }
+        @media only screen and (min-width: 64em) {
+          button {
+            display: none;
+          }
+        }
+        @media only screen and (max-width: 64em) {
+          .main-nav {
+            display: none;
+          }
+        }
       }
     }
   }

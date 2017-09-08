@@ -1,0 +1,60 @@
+.footer .container {
+  padding-top: 4.75rem;
+  background-color: $dark-blue;
+  h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: $white;
+  }
+  span {
+    display: inline-block;
+    width: 230px;
+    font-size: 18px;
+    color: $white;
+  }
+  @media only screen and (max-width: 64em) {
+    span {
+      display: inline;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+  .icons {
+    li {
+      display: inline-block;
+      margin-left: 8px;
+      width: 46px;
+      height: 46px;
+      border: 2px solid rgb(255,255,255);
+      font-size: 20px;
+      border-radius: 100%;
+      text-align: center;
+      -webkit-padding-start: 0;
+      transition: background 0.5s ease;
+      &:first-child {
+        margin-left: -5px;
+      }
+      &:hover {
+      background: rgb(255,255,255);
+      }
+    }
+  }
+  .link {
+    font-size: 18px;
+    color: $white;
+    a {
+      color: $green;
+    }
+  }
+  .copyright {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+    font-weight: 300;
+    color: $white;
+  }
+  @media only screen and (max-width: 64em) {
+    .row > div {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
