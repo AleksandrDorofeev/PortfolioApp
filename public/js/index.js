@@ -3,11 +3,11 @@ $(document).ready(function() {
     $(".main-nav").slideToggle(300);
   });
 
-  $(window).resize(function() {
-  if ($(this).width() < 1024) {
-    $('.main-nav').hide();
-  } else {
+  //$(window).resize(function() {
+  if (screen.width > 1024) {
     $('.main-nav').show();
+  } else {
+    $('.main-nav').hide();
     }
-  });
+  //});
 });
