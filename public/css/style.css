@@ -195,7 +195,9 @@ body {
       color: #fff; }
     @media only screen and (min-width: 64em) {
       body .header .container .row div button {
-        display: none; } }
+        display: none; }
+      body .header .container .row div .main-nav {
+        display: block !important; } }
     @media only screen and (max-width: 64em) {
       body .header .container .row div .main-nav {
         display: none; } }

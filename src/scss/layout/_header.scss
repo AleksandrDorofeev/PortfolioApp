@@ -18,6 +18,9 @@ body {
           button {
             display: none;
           }
+          .main-nav{
+          display: block !important;
+          } 
         }
         @media only screen and (max-width: 64em) {
           .main-nav {
