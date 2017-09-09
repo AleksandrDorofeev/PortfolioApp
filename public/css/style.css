@@ -199,8 +199,17 @@ body {
       body .header .container .row div .main-nav {
         display: block !important; } }
     @media only screen and (max-width: 64em) {
+      body .header .container .row div span {
+        font-size: 1.1rem; }
       body .header .container .row div .main-nav {
-        display: none; } }
+        display: none; }
+        body .header .container .row div .main-nav a {
+          display: block;
+          padding-left: 2rem; } }
+    @media only screen and (max-width: 48em) {
+      body .header .container .row div .main-nav a {
+        display: block;
+        padding-left: 50%; } }
 
 .main-logo .container {
   padding-top: 5.5rem;
@@ -224,6 +233,9 @@ body {
     font-size: 1.57rem;
     font-weight: 300;
     color: #fff; }
+  @media only screen and (max-width: 48em) {
+    .main-logo .container h1 {
+      font-size: 2rem; } }
 
 .portfolio .container {
   padding-top: 5.5rem; }

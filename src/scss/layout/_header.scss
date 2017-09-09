@@ -20,11 +20,24 @@ body {
           }
           .main-nav{
           display: block !important;
-          } 
+          }
         }
         @media only screen and (max-width: 64em) {
+          span {
+            font-size: 1.1rem;
+          }
           .main-nav {
             display: none;
+            a {
+              display: block;
+              padding-left: 2rem;
+            }
+          }
+        }
+        @media only screen and (max-width: 48em) {
+          .main-nav a {
+            display: block;
+            padding-left: 50%;
           }
         }
       }
