@@ -1,5 +1,6 @@
 .portfolio .container {
   padding-top: 5.5rem;
+  padding-bottom: 6.5rem;
   h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -12,14 +13,6 @@
     &:after {
       background-color: $white;
       color: $gray-900;
-    }
-  }
-  div {
-    padding-right: 0.5rem;
-    .profile-logo {
-      margin-left: 0.7rem;
-      margin-right: 0.7rem;
-      line-height: 0;
     }
   }
 }

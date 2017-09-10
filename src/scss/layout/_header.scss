@@ -18,29 +18,44 @@ body {
           button {
             display: none;
           }
-          .main-nav{
-          display: block !important;
+          .main-nav {
+            display: block !important;
+            a{
+              margin-left: $unit;
+            }
           }
         }
         @media only screen and (max-width: 64em) {
           span {
-            font-size: 1.1rem;
+            font-size: $font-size-lg * 1.60;
           }
           .main-nav {
             display: none;
             a {
-              display: block;
-              padding-left: 2rem;
+              margin-left: $unit;
             }
           }
         }
         @media only screen and (max-width: 48em) {
+          span {
+            font-size: 1.1rem;
+          }
           .main-nav a {
-            display: block;
-            padding-left: 50%;
+              display: block;
+              margin-left: 0;
           }
         }
       }
+      @media only screen and (max-width: 48em) {
+        .row div {
+          span {
+            margin-left: 0;
+        }
+      }
+      .row > div {
+        padding: 0;
+      }
     }
   }
+}
 }
