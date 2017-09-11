@@ -1,3 +1,21 @@
+.burger-menu {
+  height: 40px;
+  width: 80px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 300;
+  color: $white;
+  background-color: $dark-blue;
+  border: 1px solid $white;
+  border-radius: $border-radius;
+  outline: none;
+  z-index: 1000;
+  transition: background 0.3s ease;
+  &:hover {
+    background-color: $green;
+  }
+}
+
 .download-btn {
   height: 50px;
   width: 210px;
@@ -55,6 +73,6 @@
 }
 @media only screen and (min-width: 51em) {
   .scrollup {
-    display: none;
+    display: none !important;
   }
 }

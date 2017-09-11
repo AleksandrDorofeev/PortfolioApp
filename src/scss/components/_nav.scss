@@ -8,5 +8,8 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     color: $white;
+    &:hover {
+      color: $green;
+    }
   }
 }
