@@ -340,53 +340,6 @@ body {
     .portfolio .container .portfolio-link:hover .search {
       visibility: visible;
       opacity: 1; }
-  .portfolio .container .modal {
-    display: none;
-    position: fixed;
-    bottom: 50%;
-    left: 42.1%;
-    width: 800px;
-    background-color: #adb5bd;
-    z-index: 1050; }
-    .portfolio .container .modal .fluid-img {
-      width: 90%; }
-    .portfolio .container .modal p {
-      text-align: center;
-      width: 90%;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-size: 1rem;
-      font-weight: 300; }
-    .portfolio .container .modal span {
-      display: block; }
-      .portfolio .container .modal span a {
-        text-decoration: none;
-        color: #18bc9c; }
-    .portfolio .container .modal .close {
-      display: inline-block;
-      position: relative;
-      padding: 5px 15px 5px 15px;
-      margin-top: 0.75rem;
-      margin-bottom: 1.5rem;
-      font-size: 1rem;
-      font-weight: 400;
-      text-decoration: none;
-      color: white;
-      background: #18bc9c;
-      border: 2px solid white;
-      -webkit-border-radius: 5px;
-              border-radius: 5px;
-      outline: 0; }
-  .portfolio .container .overlay {
-    display: none;
-    position: fixed;
-    z-index: 1040;
-    background-color: #212529;
-    opacity: 0.8;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0; }
 
 .about .container {
   padding-top: 5.5rem;
@@ -578,3 +531,74 @@ body {
   @media only screen and (max-width: 64em) {
     .footer .container .row > div {
       margin-bottom: 2.5rem; } }
+
+.modal .container .content {
+  display: none;
+  position: fixed;
+  max-width: 100%;
+  min-height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 50%;
+  left: 0;
+  background-color: #fff;
+  overflow: hidden;
+  outline: none;
+  z-index: 1050; }
+
+.modal .container h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #212529; }
+
+.modal .container hr {
+  margin-top: 1.15rem;
+  margin-bottom: 1.8rem;
+  color: #212529; }
+  .modal .container hr:after {
+    background-color: #fff;
+    color: #212529; }
+
+.modal .container .fluid-img {
+  width: 90%; }
+
+.modal .container p {
+  text-align: center;
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  font-size: 1rem;
+  font-weight: 300; }
+
+.modal .container span {
+  display: block; }
+  .modal .container span a {
+    text-decoration: none;
+    color: #18bc9c; }
+
+.modal .container .close {
+  display: inline-block;
+  position: relative;
+  padding: 5px 15px 5px 15px;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background: #18bc9c;
+  border: 2px solid white;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  outline: 0; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  z-index: 1040;
+  background-color: #212529;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0; }
