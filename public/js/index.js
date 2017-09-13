@@ -16,20 +16,23 @@ $(document).ready(function() {
   // Actions with a modal window
 	$("a#cabin").click(function(event) {
     event.preventDefault();
+    $("body").addClass("no-scroll");
     $(".overlay").fadeIn(400,
       function() {
-        $(".content")
+        $(".modal")
           .css("display", "block")
-          .animate({opacity: 1, top: "10%"}, 200);
+          .animate({opacity: 1}, 200);
+          //$("body").css("overflow": "hidden");
     });
   });
 	$('.close, .overlay').click(function(event) {
     event.preventDefault();
-    $('.content')
-      .animate({opacity: 0, top: "5%"}, 200,
-        function(event) {
+    $('.modal')
+      .animate({opacity: 0, scrollTop: 0}, "fast",
+        function() {
         $(this).css('display', 'none');
         $('.overlay').fadeOut(400);
+        $("body").removeClass("no-scroll");
       }
     );
   });

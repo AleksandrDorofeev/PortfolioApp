@@ -1,5 +1,4 @@
-.modal .container {
-  .content {
+.modal {
     display: none;
     position: fixed;
     //width: 40rem;
@@ -11,7 +10,9 @@
     overflow: scroll;
     //outline: none;
     z-index: 1050;
-  }
+
+}
+.modal .container .content {
   h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -48,7 +49,7 @@
   }
   .close {
     display: inline-block;
-    position: absolute;
+    //position: absolute;
     padding: 5px 15px 5px 15px;
     margin-top: $unit / 2;
     margin-bottom: $unit;

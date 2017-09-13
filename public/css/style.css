@@ -111,6 +111,9 @@ textarea {
   margin-left: 0;
   margin-right: 0; }
 
+.no-scroll {
+  overflow-y: hidden; }
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -532,7 +535,7 @@ body {
     .footer .container .row > div {
       margin-bottom: 2.5rem; } }
 
-.modal .container .content {
+.modal {
   display: none;
   position: fixed;
   top: 0;
@@ -543,38 +546,37 @@ body {
   overflow: scroll;
   z-index: 1050; }
 
-.modal .container h2 {
+.modal .container .content h2 {
   font-size: 3rem;
   text-transform: uppercase;
   color: #212529; }
 
-.modal .container hr {
+.modal .container .content hr {
   margin-top: 1.15rem;
   margin-bottom: 1.8rem;
   color: #212529; }
-  .modal .container hr:after {
+  .modal .container .content hr:after {
     background-color: #fff;
     color: #212529; }
 
-.modal .container .fluid-img {
+.modal .container .content .fluid-img {
   width: 50%; }
 
-.modal .container p {
+.modal .container .content p {
   display: inline-block;
   text-align: center;
   width: 50%;
   font-size: 1rem;
   font-weight: 300; }
 
-.modal .container span {
+.modal .container .content span {
   display: block; }
-  .modal .container span a {
+  .modal .container .content span a {
     text-decoration: none;
     color: #18bc9c; }
 
-.modal .container .close {
+.modal .container .content .close {
   display: inline-block;
-  position: absolute;
   padding: 5px 15px 5px 15px;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
