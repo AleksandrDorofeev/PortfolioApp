@@ -22,7 +22,7 @@ $(document).ready(function() {
           .css("display", "block")
           .animate({opacity: 1, top: "10%"}, 200);
     });
-	});
+  });
 	$('.close, .overlay').click(function(event) {
     event.preventDefault();
     $('.content')
@@ -32,7 +32,7 @@ $(document).ready(function() {
         $('.overlay').fadeOut(400);
       }
     );
-	});
+  });
 
   // Scrollup btn
   $(window).scroll(function() {
