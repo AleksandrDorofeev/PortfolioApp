@@ -2,13 +2,14 @@
   .content {
     display: none;
     position: fixed;
+    //width: 40rem;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background-color: $white;
     overflow: scroll;
-    outline: none;
+    //outline: none;
     z-index: 1050;
   }
   h2 {
@@ -27,12 +28,14 @@
   }
   .fluid-img {
     width: 50%;
+    //max-width: 20rem;
   }
   p {
+    display: inline-block;
     text-align: center;
-    width: 90%;
-    margin-left: 5%;
-    margin-right: 5%;
+    width: 50%;
+    //margin-left: 5%;
+    //margin-right: 5%;
     font-size: $font-size-md;
     font-weight: 300;
   }
@@ -45,7 +48,7 @@
   }
   .close {
     display: inline-block;
-    position: relative;
+    position: absolute;
     padding: 5px 15px 5px 15px;
     margin-top: $unit / 2;
     margin-bottom: $unit;

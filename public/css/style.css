@@ -541,7 +541,6 @@ body {
   left: 0;
   background-color: #fff;
   overflow: scroll;
-  outline: none;
   z-index: 1050; }
 
 .modal .container h2 {
@@ -561,10 +560,9 @@ body {
   width: 50%; }
 
 .modal .container p {
+  display: inline-block;
   text-align: center;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 50%;
   font-size: 1rem;
   font-weight: 300; }
 
@@ -576,7 +574,7 @@ body {
 
 .modal .container .close {
   display: inline-block;
-  position: relative;
+  position: absolute;
   padding: 5px 15px 5px 15px;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
