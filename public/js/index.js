@@ -22,7 +22,6 @@ $(document).ready(function() {
         $(".modal")
           .css("display", "block")
           .animate({opacity: 1}, 200);
-          //$("body").css("overflow": "hidden");
     });
   });
 	$('.close, .overlay').click(function(event) {
