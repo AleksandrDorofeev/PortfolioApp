@@ -10,28 +10,53 @@ $(document).ready(function() {
         event.preventDefault();
         let id  = $(this).attr('href'),
             top = $(id).offset().top;
-        $('body,html').animate({scrollTop: top}, 500);
+        //$('body,html').animate({scrollTop: top}, 500);
+        $('body,html').animate({ scrollTop: top }, 2000, 'easeInOutQuint')
     });
 
   // Actions with a modal window
 	$("a#cabin").click(function(event) {
     event.preventDefault();
     $("body").addClass("no-scroll");
+    $(".cabin .modal").addClass("animated fadeInDown");
     $(".overlay").fadeIn(400,
       function() {
-        $(".modal")
+        $(".cabin .modal")
           .css("display", "block")
           .animate({opacity: 1}, 200);
     });
   });
 	$('.close, .overlay').click(function(event) {
     event.preventDefault();
-    $('.modal')
+    $('.cabin .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",
         function() {
-        $(this).css('display', 'none');
-        $('.overlay').fadeOut(400);
-        $("body").removeClass("no-scroll");
+        $(this).css('display', 'none')
+        $('.overlay').fadeOut(400)
+        $("body").removeClass("no-scroll")
+      }
+    );
+  });
+
+  $("a#cake").click(function(event) {
+    event.preventDefault();
+    $("body").addClass("no-scroll");
+    $(".cake .modal").addClass("animated fadeInDown");
+    $(".overlay").fadeIn(400,
+      function() {
+        $(".cake .modal")
+          .css("display", "block")
+          .animate({opacity: 1}, 200);
+    });
+  });
+	$('.close, .overlay').click(function(event) {
+    event.preventDefault();
+    $('.cake .modal')
+      .animate({opacity: 0, scrollTop: 0}, "fast",
+        function() {
+        $(this).css('display', 'none')
+        $('.overlay').fadeOut(400)
+        $("body").removeClass("no-scroll")
       }
     );
   });
@@ -49,3 +74,7 @@ $(document).ready(function() {
     return false;
   });
 });
+
+AOS.init({
+  duration: 500,
+})

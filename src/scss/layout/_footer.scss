@@ -39,6 +39,11 @@
       }
     }
   }
+  @media only screen and (max-width: 48em) {
+    .icons li {
+      margin-left: 5px;
+    }
+  }
   .link {
     font-size: 18px;
     color: $white;

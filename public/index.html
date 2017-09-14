@@ -6,10 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
   <link rel="stylesheet" href="./vendor/grid/flexboxgrid.css" type="text/css">
-  <!--<link rel="stylesheet" href="./vendor/normalize/normalize.css" type="text/css">-->
   <link rel="stylesheet" href="./fonts/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="./css/style.css" type="text/css">
+  <link rel="stylesheet" href="./vendor/aos/aos.css">
   <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="./vendor/aos/aos.js"></script>
+  <script type="text/javascript" src="./vendor/jQueryEasingPlugin/jquery.easing.js"></script>
 </head>
 <body>
 
@@ -55,7 +57,7 @@
       </div>
 
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4 cabin-image" data-aos="fade-up" data-aos-delay="300">
           <a href="#" id="cabin" class="portfolio-link">
             <div class="bg-image">
               <div class="search">
@@ -69,8 +71,8 @@
           </a>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <a href="#" class="portfolio-link">
+        <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="400">
+          <a href="#" id="cake" class="portfolio-link">
             <div class="bg-image">
               <div class="search">
                 <i class="fa fa-search-plus fa-4x search"></i>
@@ -78,12 +80,12 @@
             </div>
             <picture class="profile-logo">
                 <source srcset="./img/svg/cake.svg">
-                <img src="./img/png/cake.png" alt="cabin" class="fluid-img">
+                <img src="./img/png/cake.png" alt="cake" class="fluid-img">
             </picture>
           </a>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="500">
           <a href="#" class="portfolio-link">
             <div class="bg-image">
               <div class="search">
@@ -97,7 +99,7 @@
           </a>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="600">
           <a href="#" class="portfolio-link">
             <div class="bg-image">
               <div class="search">
@@ -111,7 +113,7 @@
           </a>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="700">
           <a href="#" class="portfolio-link">
             <div class="bg-image">
               <div class="search">
@@ -125,7 +127,7 @@
           </a>
         </div>
 
-        <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="col-xs-12 col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="800">
           <a href="#" class="portfolio-link">
             <div class="bg-image">
               <div class="search">
@@ -238,26 +240,53 @@
     </div>
   </footer>
 
-  <div class="modal">
-    <div class="container">
-      <div class="text-center">
-        <div class="content">
-          <h2>Project Title</h2>
-          <hr>
-          <picture>
-            <source srcset="./img/svg/cabin.svg">
-            <img src="./img/png/cabin.png" alt="cabin" class="fluid-img">
-          </picture>
-          <p>Use this area of the page to describe your project.
-            The icon above is part of a free icon set by Flat Icons.
-            On their website, you can download their free set with 16
-            icons, or you can purchase the entire set with 146 icons
-            for only $12!</p>
-          <span class="name">Client: <a href="#">Start Bootstrap</a></span>
-          <span class="date">Date: <a href="#">April 2014</a></span>
-          <span class="service">Service: <a href="#">Web Development</a></span>
-          <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i>Close</a>
-        </div>  
+  <div class="cabin">
+    <div class="modal">
+      <div class="container">
+        <div class="text-center">
+          <div class="content">
+            <h2>Project Title</h2>
+            <hr>
+            <picture>
+              <source srcset="./img/svg/cabin.svg">
+              <img src="./img/png/cabin.png" alt="cabin" class="fluid-img">
+            </picture>
+            <p>Use this area of the page to describe your project.
+              The icon above is part of a free icon set by Flat Icons.
+              On their website, you can download their free set with 16
+              icons, or you can purchase the entire set with 146 icons
+              for only $12!</p>
+            <span class="name">Client: <a href="#">Start Bootstrap</a></span>
+            <span class="date">Date: <a href="#">April 2014</a></span>
+            <span class="service">Service: <a href="#">Web Development</a></span>
+            <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i>Close</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="cake">
+    <div class="modal">
+      <div class="container">
+        <div class="text-center">
+          <div class="content">
+            <h2>Project Title</h2>
+            <hr>
+            <picture>
+              <source srcset="./img/svg/cake.svg">
+              <img src="./img/png/cake.png" alt="cake" class="fluid-img">
+            </picture>
+            <p>Use this area of the page to describe your project.
+              The icon above is part of a free icon set by Flat Icons.
+              On their website, you can download their free set with 16
+              icons, or you can purchase the entire set with 146 icons
+              for only $12!</p>
+            <span class="name">Client: <a href="#">Start Bootstrap</a></span>
+            <span class="date">Date: <a href="#">April 2014</a></span>
+            <span class="service">Service: <a href="#">Web Development</a></span>
+            <a class="close" href="#"><i class="fa fa-times" aria-hidden="true"></i>Close</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
