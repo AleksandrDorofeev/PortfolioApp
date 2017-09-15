@@ -572,11 +572,6 @@ body {
     .footer .container .row > div {
       margin-bottom: 2.5rem; } }
 
-.cabin .modal {
-  background-color: #fff;
-  overflow: scroll;
-  outline: none; }
-
 .modal {
   display: none;
   position: fixed;
@@ -641,7 +636,12 @@ body {
   top: 0;
   left: 0; }
 
-.cake .modal {
+.cabin .modal,
+.cake .modal,
+.circus .modal,
+.game .modal,
+.safe .modal,
+.submarine .modal {
   background-color: #fff;
   overflow: scroll;
   outline: none; }

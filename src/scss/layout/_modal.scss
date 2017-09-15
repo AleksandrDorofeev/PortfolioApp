@@ -1,9 +1,3 @@
-.cabin .modal {
-    background-color: $white;
-    overflow: scroll;
-    outline: none;
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -73,7 +67,12 @@
   left: 0;
 }
 
-.cake .modal {
+.cabin .modal,
+.cake .modal,
+.circus .modal,
+.game .modal,
+.safe .modal,
+.submarine .modal {
     background-color: $white;
     overflow: scroll;
     outline: none;

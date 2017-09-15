@@ -61,6 +61,97 @@ $(document).ready(function() {
     );
   });
 
+  $("a#circus").click(function(event) {
+    event.preventDefault();
+    $("body").addClass("no-scroll");
+    $(".circus .modal").addClass("animated fadeInDown");
+    $(".overlay").fadeIn(400,
+      function() {
+        $(".circus .modal")
+          .css("display", "block")
+          .animate({opacity: 1}, 200);
+    });
+  });
+	$('.close, .overlay').click(function(event) {
+    event.preventDefault();
+    $('.circus .modal')
+      .animate({opacity: 0, scrollTop: 0}, "fast",
+        function() {
+        $(this).css('display', 'none')
+        $('.overlay').fadeOut(400)
+        $("body").removeClass("no-scroll")
+      }
+    );
+  });
+
+  $("a#game").click(function(event) {
+    event.preventDefault();
+    $("body").addClass("no-scroll");
+    $(".game .modal").addClass("animated fadeInDown");
+    $(".overlay").fadeIn(400,
+      function() {
+        $(".game .modal")
+          .css("display", "block")
+          .animate({opacity: 1}, 200);
+    });
+  });
+	$('.close, .overlay').click(function(event) {
+    event.preventDefault();
+    $('.game .modal')
+      .animate({opacity: 0, scrollTop: 0}, "fast",
+        function() {
+        $(this).css('display', 'none')
+        $('.overlay').fadeOut(400)
+        $("body").removeClass("no-scroll")
+      }
+    );
+  });
+
+  $("a#safe").click(function(event) {
+    event.preventDefault();
+    $("body").addClass("no-scroll");
+    $(".safe .modal").addClass("animated fadeInDown");
+    $(".overlay").fadeIn(400,
+      function() {
+        $(".safe .modal")
+          .css("display", "block")
+          .animate({opacity: 1}, 200);
+    });
+  });
+	$('.close, .overlay').click(function(event) {
+    event.preventDefault();
+    $('.safe .modal')
+      .animate({opacity: 0, scrollTop: 0}, "fast",
+        function() {
+        $(this).css('display', 'none')
+        $('.overlay').fadeOut(400)
+        $("body").removeClass("no-scroll")
+      }
+    );
+  });
+
+  $("a#submarine").click(function(event) {
+    event.preventDefault();
+    $("body").addClass("no-scroll");
+    $(".submarine .modal").addClass("animated fadeInDown");
+    $(".overlay").fadeIn(400,
+      function() {
+        $(".submarine .modal")
+          .css("display", "block")
+          .animate({opacity: 1}, 200);
+    });
+  });
+	$('.close, .overlay').click(function(event) {
+    event.preventDefault();
+    $('.submarine .modal')
+      .animate({opacity: 0, scrollTop: 0}, "fast",
+        function() {
+        $(this).css('display', 'none')
+        $('.overlay').fadeOut(400)
+        $("body").removeClass("no-scroll")
+      }
+    );
+  });
   // Scrollup btn
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
