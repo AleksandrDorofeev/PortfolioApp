@@ -1,5 +1,20 @@
 $(document).ready(function() {
 
+  // Disable pagename if <100px from the top
+  $(window).scroll(function() {
+    if ($(this).scrollTop() < 100) {
+      $('.top').addClass("not-active");
+    } else {
+      $('.top').removeClass("not-active");
+    }
+  });
+
+  // Pagename scrollup
+  $('.top').click(function() {
+    $("html, body").animate({ scrollTop: 0 }, 800);
+    return false;
+  });
+
   // Dropdown
   $(".header button").click(function() {
     $(".main-nav").slideToggle(300);
@@ -10,8 +25,11 @@ $(document).ready(function() {
         event.preventDefault();
         let id  = $(this).attr('href'),
             top = $(id).offset().top;
+        if ($(window).width() < 1024) {
+          $(".main-nav").hide(200);
+        };
         //$('body,html').animate({scrollTop: top}, 500);
-        $('body,html').animate({ scrollTop: top }, 2000, 'easeInOutQuint')
+        $('body,html').animate({ scrollTop: top - 50 }, 1000, 'easeInOutQuint');
     });
 
   // Actions with a modal window
@@ -26,7 +44,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close, .overlay').click(function(event) {
+	$('.close').click(function(event) {
     event.preventDefault();
     $('.cabin .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",

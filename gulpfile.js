@@ -1,9 +1,9 @@
 let gulp = require('gulp'),
     sass = require('gulp-sass'),
+    autoprefixer = require('gulp-autoprefixer'),
     browserSync = require('browser-sync'),
     imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
-    autoprefixer = require('gulp-autoprefixer');
+    pngquant = require('imagemin-pngquant');
 
 gulp.task('sass', () => {
   return gulp.src('src/scss/**/*.scss')

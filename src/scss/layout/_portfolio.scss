@@ -45,9 +45,9 @@
       opacity: 1;
     }
   }
-  @media only screen and (max-width: 48em) {
+  @media only screen and (max-width: 64em) {
     [data-aos-delay] {
     transition-delay: 0s !important;
-  }
-  }
+    }
+  }  
 }

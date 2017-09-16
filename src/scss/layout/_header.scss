@@ -1,18 +1,26 @@
 body {
   height: 100vh;
     .header {
-      .container {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
+      width:100%;
       background-color: $dark-blue;
+      position:fixed;
+      top:0;
+      left:0;
+      z-index: 1000;
+      .container {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background-color: $dark-blue;
       .row div {
-        span {
+        .top {
+          display: inline-block;
            letter-spacing: 0.05rem;
            margin-left: $unit;
            text-transform: uppercase;
            font-weight: 700;
            font-size: $font-size-lg * 1.60;
            color: $white;
+           text-decoration: none;
         }
         .burger-menu {
           margin-right: $unit;
@@ -26,19 +34,19 @@ body {
           }
         }
         @media only screen and (max-width: 64em) {
-          span {
+          .top {
             font-size: $font-size-lg * 1.60;
           }
           .main-nav {
             display: none;
             a {
-              display: block;
+              display: inline-block;
               margin-left: $unit;
             }
           }
         }
         @media only screen and (max-width: 48em) {
-          span {
+          .top {
             font-size: 1.1rem;
           }
           .main-nav a {
@@ -48,17 +56,24 @@ body {
         }
       }
       @media only screen and (max-width: 48em) {
+        .row > div {
+          padding: 0;
+        }
         .row div {
-          span {
+          .top {
             margin-left: 0;
+            padding-top: 0.45rem;
         }
         .burger-menu {
-          margin-right: 0;
+          //padding-left: 1.5rem;
         }
       }
-      .row > div {
-        padding: 0;
-      }
+    }
+  }
+  @media only screen and (max-width: 64em) {
+    .container {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
 }
