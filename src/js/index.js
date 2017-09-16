@@ -23,7 +23,7 @@ $(document).ready(function() {
   // Menu smooth scroll
   $("#menu").on("click", "a", function(event) {
         event.preventDefault();
-        let id  = $(this).attr('href'),
+        var id  = $(this).attr('href'),
             top = $(id).offset().top;
         if ($(window).width() < 1024) {
           $(".main-nav").hide(200);
