@@ -158,12 +158,12 @@ textarea {
       -ms-flex-align: center;
           align-items: center; }
 
-hr {
+.star {
   max-width: 250px;
   padding: 0;
   border: none;
   border-top: solid 5px; }
-  hr:after {
+  .star:after {
     display: inline-block;
     position: relative;
     top: -.8em;
@@ -252,12 +252,44 @@ hr {
   .scrollup {
     display: none !important; } }
 
+.close {
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background: #18bc9c;
+  border: 2px solid white;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  outline: 0; }
+
 .item i {
   color: white;
   margin: 5px;
   padding: 5px; }
   .item i:hover {
     color: #18bc9c; }
+
+.left-p,
+.right-p {
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
+  font-size: 1.25rem;
+  text-align: left;
+  font-weight: 300;
+  color: #fff; }
+
+.p-modal {
+  display: inline-block;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 300; }
 
 nav {
   margin-top: 0.75rem; }
@@ -302,8 +334,6 @@ body {
         body .header .container .row div .main-nav {
           display: block !important; } }
       @media only screen and (max-width: 64em) {
-        body .header .container .row div .top {
-          font-size: 2rem; }
         body .header .container .row div .main-nav {
           display: none; }
           body .header .container .row div .main-nav a {
@@ -320,7 +350,9 @@ body {
           padding: 0; }
         body .header .container .row div .top {
           margin-left: 0;
-          padding-top: 0.45rem; } }
+          padding-top: .45rem; }
+        body .header .container .row div .burger-menu {
+          margin-right: 0; } }
     @media only screen and (max-width: 64em) {
       body .header .container {
         padding-top: 1rem;
@@ -334,7 +366,7 @@ body {
   background-color: #18bc9c; }
   .main-logo .container h1 {
     margin-top: 0.58rem;
-    font-size: 4.75em;
+    font-size: 4.75rem;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff; }
@@ -354,6 +386,14 @@ body {
   @media only screen and (max-width: 48em) {
     .main-logo .container h1 {
       font-size: 2rem; } }
+
+@media only screen and (max-width: 64em) {
+  .main-logo .container {
+    padding-top: 7.75rem; } }
+
+@media only screen and (max-width: 48em) {
+  .main-logo .container {
+    padding-top: 5.75rem; } }
 
 .portfolio .container {
   padding-top: 5.5rem;
@@ -422,69 +462,18 @@ body {
   .about .container .row {
     margin-bottom: 1.5rem; }
   @media only screen and (min-width: 75em) {
-    .about .container .left {
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
+    .about .container .left-p {
       margin-left: 13.75rem;
-      width: 380px;
-      font-size: 1.25rem;
-      text-align: left;
-      font-weight: 300;
-      color: #fff; }
-    .about .container .right {
+      width: 380px; }
+    .about .container .right-p {
       margin-left: 1rem;
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
-      width: 380px;
-      font-size: 1.25rem;
-      text-align: left;
-      font-weight: 300;
-      color: #fff; } }
+      width: 380px; } }
   @media only screen and (min-width: 64em) and (max-width: 75em) {
-    .about .container .left {
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
+    .about .container .left-p {
       margin-left: 8.125rem;
-      width: 380px;
-      font-size: 1.25rem;
-      text-align: left;
-      font-weight: 300;
-      color: #fff; }
-    .about .container .right {
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
-      width: 365px;
-      font-size: 1.25rem;
-      text-align: left;
-      font-weight: 300;
-      color: #fff; } }
-  @media only screen and (max-width: 64em) {
-    .about .container .left {
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
-      font-size: 1.25rem;
-      text-align: left;
-      font-weight: 300;
-      color: #fff; }
-    .about .container .right {
-      -webkit-hyphens: auto;
-         -moz-hyphens: auto;
-          -ms-hyphens: auto;
-              hyphens: auto;
-      font-size: 1.25rem;
-      text-align: left;
-      font-weight: 300;
-      color: #fff; } }
+      width: 380px; }
+    .about .container .right-p {
+      width: 365px; } }
 
 .form .container {
   padding-top: 5.5rem;
@@ -553,19 +542,17 @@ body {
   padding-top: 4.75rem;
   background-color: #2c3e50; }
   .footer .container h3 {
-    font-size: 28px;
+    font-size: 1.75rem;
     text-transform: uppercase;
     color: #fff; }
   .footer .container span {
     display: inline-block;
     width: 230px;
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #fff; }
   @media only screen and (max-width: 64em) {
     .footer .container span {
-      display: inline;
-      font-size: 18px;
-      color: #fff; } }
+      display: inline; } }
   .footer .container .icons li {
     display: inline-block;
     margin-left: 8px;
@@ -623,32 +610,11 @@ body {
     background-color: #fff;
     color: #212529; }
 
-.content p {
-  display: inline-block;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 300; }
-
 .content span {
   display: block; }
   .content span a {
     text-decoration: none;
     color: #18bc9c; }
-
-.content .close {
-  display: inline-block;
-  padding: 5px 15px 5px 15px;
-  margin-top: 0.75rem;
-  margin-bottom: 1.5rem;
-  font-size: 1rem;
-  font-weight: 400;
-  text-decoration: none;
-  color: white;
-  background: #18bc9c;
-  border: 2px solid white;
-  -webkit-border-radius: 5px;
-          border-radius: 5px;
-  outline: 0; }
 
 .overlay {
   display: none;
@@ -674,19 +640,19 @@ body {
 @media only screen and (min-width: 64em) {
   .modal .content .fluid-img {
     width: 50%; }
-  .modal .content p {
+  .modal .content .p-modal {
     width: 50%; } }
 
 @media only screen and (min-width: 48em) {
   .modal .content .fluid-img {
     width: 70%; }
-  .modal .content p {
+  .modal .content .p-modal {
     width: 70%; } }
 
 @media only screen and (max-width: 48em) {
   .modal .content .fluid-img {
     width: 90%; }
-  .modal .content p {
+  .modal .content .p-modal {
     width: 90%; } }
 
 @media only screen and (max-width: 27.125em) {

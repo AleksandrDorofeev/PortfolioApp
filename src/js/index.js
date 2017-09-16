@@ -2,16 +2,19 @@ $(document).ready(function() {
 
   // Disable pagename if <100px from the top
   $(window).scroll(function() {
-    if ($(this).scrollTop() < 100) {
-      $('.top').addClass("not-active");
-    } else {
+    if ($(this).scrollTop() > 100) {
       $('.top').removeClass("not-active");
+    } else {
+      $('.top').addClass("not-active");
     }
   });
 
   // Pagename scrollup
   $('.top').click(function() {
-    $("html, body").animate({ scrollTop: 0 }, 800);
+    if ($(window).width() < 1024) {
+      $(".main-nav").hide(200);
+    };
+     $("html, body").animate({ scrollTop: 0 }, 800);
     return false;
   });
 
@@ -28,8 +31,15 @@ $(document).ready(function() {
         if ($(window).width() < 1024) {
           $(".main-nav").hide(200);
         };
-        //$('body,html').animate({scrollTop: top}, 500);
-        $('body,html').animate({ scrollTop: top - 50 }, 1000, 'easeInOutQuint');
+        if ($(window).width() >= 1200) {
+          $('body,html').animate({ scrollTop: top - 50 }, 1000, 'easeInOutQuint');
+         }else if ($(window).width() < 1200) {
+           $('body,html').animate({ scrollTop: top - 5 }, 1000, 'easeInOutQuint');
+         }else if ($(window).width() < 1024) {
+           $('body,html').animate({ scrollTop: top + 20 }, 1000, 'easeInOutQuint');
+         }else if ($(window).width() < 768) {
+           $('body,html').animate({ scrollTop: top + 15 }, 1000, 'easeInOutQuint');
+         };
     });
 
   // Actions with a modal window

@@ -1,25 +1,25 @@
 .footer {
-  background-color: $dark-blue;
+  background-color: $footer-bg;
 }
 .footer .container {
   padding-top: 4.75rem;
-  background-color: $dark-blue;
+  background-color: $footer-bg;
   h3 {
-    font-size: 28px;
+    font-size: $font-size-md * 1.75;
     text-transform: uppercase;
     color: $white;
   }
   span {
     display: inline-block;
     width: 230px;
-    font-size: 18px;
+    font-size: $font-size-md * 1.125;
     color: $white;
   }
   @media only screen and (max-width: 64em) {
     span {
       display: inline;
-      font-size: 18px;
-      color: $white;
+      //font-size: 18px;
+      //color: $white;
     }
   }
   .icons {

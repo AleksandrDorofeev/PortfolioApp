@@ -76,3 +76,18 @@
     display: none !important;
   }
 }
+
+.close {
+  display: inline-block;
+  padding: 5px 15px 5px 15px;
+  margin-top: $unit / 2;
+  margin-bottom: $unit;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: rgb(255,255,255);
+  background: rgb(24,188,156);
+  border: 2px solid rgb(255,255,255);
+  border-radius: 5px;
+  outline: 0;
+}
