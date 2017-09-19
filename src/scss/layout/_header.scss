@@ -1,6 +1,4 @@
-body {
-  height: 100vh;
-    .header {
+  .header {
       width:100%;
       background-color: $header-bg;
       position:fixed;
@@ -8,9 +6,8 @@ body {
       left:0;
       z-index: 1000;
       .container {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        background-color: $header-bg;
+        padding-top: .85rem;
+        padding-bottom: .85rem;
       .row div {
         .top {
           display: inline-block;
@@ -49,6 +46,10 @@ body {
           .main-nav a {
               display: block;
               margin-left: 0;
+              margin-bottom: .3rem;
+              &:last-child {
+                margin-bottom: 0;
+              }
           }
         }
       }
@@ -73,5 +74,4 @@ body {
       padding-bottom: 1rem;
     }
   }
-}
 }

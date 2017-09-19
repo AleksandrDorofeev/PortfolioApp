@@ -32,7 +32,7 @@ $(document).ready(function() {
           $(".main-nav").hide(200);
         };
         if ($(window).width() >= 1200) {
-          $('body,html').animate({ scrollTop: top - 50 }, 1000, 'easeInOutQuint');
+          $('body,html').animate({ scrollTop: top }, 1000, 'easeInOutQuint');
          }else if ($(window).width() < 1200) {
            $('body,html').animate({ scrollTop: top - 5 }, 1000, 'easeInOutQuint');
          }else if ($(window).width() < 1024) {
@@ -54,7 +54,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close').click(function(event) {
+	$('.close-btn').click(function(event) {
     event.preventDefault();
     $('.cabin .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",
@@ -77,7 +77,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close, .overlay').click(function(event) {
+	$('.close-btn').click(function(event) {
     event.preventDefault();
     $('.cake .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",
@@ -100,7 +100,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close, .overlay').click(function(event) {
+	$('.close-btn').click(function(event) {
     event.preventDefault();
     $('.circus .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",
@@ -123,7 +123,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close, .overlay').click(function(event) {
+	$('.close-btn').click(function(event) {
     event.preventDefault();
     $('.game .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",
@@ -146,7 +146,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close, .overlay').click(function(event) {
+	$('.close-btn').click(function(event) {
     event.preventDefault();
     $('.safe .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",
@@ -169,7 +169,7 @@ $(document).ready(function() {
           .animate({opacity: 1}, 200);
     });
   });
-	$('.close, .overlay').click(function(event) {
+	$('.close-btn').click(function(event) {
     event.preventDefault();
     $('.submarine .modal')
       .animate({opacity: 0, scrollTop: 0}, "fast",

@@ -106,10 +106,8 @@ textarea {
 .fluid-img {
   width: 100%; }
 
-.portfolio .container a .profile-logo {
-  margin-bottom: 10px;
-  margin-left: 0;
-  margin-right: 0; }
+.margin-bottom {
+  margin-bottom: 1rem; }
 
 .no-scroll {
   overflow-y: hidden; }
@@ -174,7 +172,7 @@ textarea {
 
 .burger-menu {
   height: 40px;
-  width: 80px;
+  padding: 0 12px 0 12px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 300;
@@ -190,10 +188,12 @@ textarea {
   transition: background 0.3s ease; }
   .burger-menu:hover {
     background-color: #18bc9c; }
+  .burger-menu i {
+    margin-right: .2rem; }
 
 .download-btn {
   height: 50px;
-  width: 210px;
+  padding: 0 15px 0 15px;
   cursor: pointer;
   font-size: 1.1rem;
   font-weight: 300;
@@ -210,12 +210,14 @@ textarea {
   .download-btn:hover {
     color: #18bc9c;
     background-color: #fff; }
+  .download-btn i {
+    margin-right: .75rem; }
 
 .form input[type="submit"] {
   display: block;
   margin-top: 1.5625rem;
   height: 50px;
-  width: 80px;
+  padding: 0 15px 0 15px;
   cursor: pointer;
   font-size: 19px;
   font-weight: 400;
@@ -252,10 +254,9 @@ textarea {
   .scrollup {
     display: none !important; } }
 
-.close {
+.close-btn {
   display: inline-block;
   padding: 5px 15px 5px 15px;
-  margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   font-size: 1rem;
   font-weight: 400;
@@ -266,12 +267,14 @@ textarea {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   outline: 0; }
+  .close-btn i {
+    margin-right: .2rem; }
 
-.item i {
+.icon i {
   color: white;
   margin: 5px;
   padding: 5px; }
-  .item i:hover {
+  .icon i:hover {
     color: #18bc9c; }
 
 .left-p,
@@ -285,15 +288,9 @@ textarea {
   font-weight: 300;
   color: #fff; }
 
-.p-modal {
-  display: inline-block;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 300; }
-
-nav {
+.main-nav {
   margin-top: 0.75rem; }
-  nav a {
+  .main-nav a {
     margin-right: 0.75rem;
     letter-spacing: 0.07rem;
     font-size: 1rem;
@@ -301,69 +298,70 @@ nav {
     text-transform: uppercase;
     text-decoration: none;
     color: #fff; }
-    nav a:hover {
+    .main-nav a:hover {
       color: #18bc9c; }
 
-body {
-  height: 100vh; }
-  body .header {
-    width: 100%;
-    background-color: #2c3e50;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000; }
-    body .header .container {
-      padding-top: 2rem;
-      padding-bottom: 2rem;
-      background-color: #2c3e50; }
-      body .header .container .row div .top {
-        display: inline-block;
-        letter-spacing: 0.05rem;
-        margin-left: 1.5rem;
-        text-transform: uppercase;
-        font-weight: 700;
-        font-size: 2rem;
-        color: #fff;
-        text-decoration: none; }
-      body .header .container .row div .burger-menu {
-        margin-right: 1.5rem; }
-      @media only screen and (min-width: 64em) {
-        body .header .container .row div .burger-menu {
-          display: none; }
-        body .header .container .row div .main-nav {
-          display: block !important; } }
-      @media only screen and (max-width: 64em) {
-        body .header .container .row div .main-nav {
-          display: none; }
-          body .header .container .row div .main-nav a {
-            display: inline-block;
-            margin-left: 1.5rem; } }
-      @media only screen and (max-width: 48em) {
-        body .header .container .row div .top {
-          font-size: 1.1rem; }
-        body .header .container .row div .main-nav a {
-          display: block;
-          margin-left: 0; } }
-      @media only screen and (max-width: 48em) {
-        body .header .container .row > div {
-          padding: 0; }
-        body .header .container .row div .top {
-          margin-left: 0;
-          padding-top: .45rem; }
-        body .header .container .row div .burger-menu {
-          margin-right: 0; } }
+.header {
+  width: 100%;
+  background-color: #2c3e50;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000; }
+  .header .container {
+    padding-top: .85rem;
+    padding-bottom: .85rem; }
+    .header .container .row div .top {
+      display: inline-block;
+      letter-spacing: 0.05rem;
+      margin-left: 1.5rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 2rem;
+      color: #fff;
+      text-decoration: none; }
+    .header .container .row div .burger-menu {
+      margin-right: 1.5rem; }
+    @media only screen and (min-width: 64em) {
+      .header .container .row div .burger-menu {
+        display: none; }
+      .header .container .row div .main-nav {
+        display: block !important; } }
     @media only screen and (max-width: 64em) {
-      body .header .container {
-        padding-top: 1rem;
-        padding-bottom: 1rem; } }
+      .header .container .row div .main-nav {
+        display: none; }
+        .header .container .row div .main-nav a {
+          display: inline-block;
+          margin-left: 1.5rem; } }
+    @media only screen and (max-width: 48em) {
+      .header .container .row div .top {
+        font-size: 1.1rem; }
+      .header .container .row div .main-nav a {
+        display: block;
+        margin-left: 0;
+        margin-bottom: .3rem; }
+        .header .container .row div .main-nav a:last-child {
+          margin-bottom: 0; } }
+    @media only screen and (max-width: 48em) {
+      .header .container .row > div {
+        padding: 0; }
+      .header .container .row div .top {
+        margin-left: 0;
+        padding-top: .45rem; }
+      .header .container .row div .burger-menu {
+        margin-right: 0; } }
+  @media only screen and (max-width: 64em) {
+    .header .container {
+      padding-top: 1rem;
+      padding-bottom: 1rem; } }
 
 .main-logo {
+  width: 100%;
   background-color: #18bc9c; }
 
 .main-logo .container {
-  padding-top: 11.75rem;
-  background-color: #18bc9c; }
+  padding-top: 8rem;
+  padding-bottom: 6.25rem; }
   .main-logo .container h1 {
     margin-top: 0.58rem;
     font-size: 4.75rem;
@@ -377,9 +375,8 @@ body {
     .main-logo .container hr:after {
       background-color: #18bc9c;
       color: #fff; }
-  .main-logo .container .skills {
+  .main-logo .container .skills span {
     display: inline-block;
-    padding-bottom: 6.4rem;
     font-size: 1.57rem;
     font-weight: 300;
     color: #fff; }
@@ -396,8 +393,8 @@ body {
     padding-top: 5.75rem; } }
 
 .portfolio .container {
-  padding-top: 5.5rem;
-  padding-bottom: 6.5rem; }
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem; }
   .portfolio .container h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -435,6 +432,10 @@ body {
     .portfolio .container .portfolio-link:hover .search {
       visibility: visible;
       opacity: 1; }
+    .portfolio .container .portfolio-link .profile-logo {
+      margin-bottom: 10px;
+      margin-left: 0;
+      margin-right: 0; }
   @media only screen and (max-width: 64em) {
     .portfolio .container [data-aos-delay] {
       -webkit-transition-delay: 0s !important;
@@ -445,9 +446,8 @@ body {
   background-color: #18bc9c; }
 
 .about .container {
-  padding-top: 5.5rem;
-  padding-bottom: 5.5rem;
-  background-color: #18bc9c; }
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem; }
   .about .container h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -476,8 +476,8 @@ body {
       width: 365px; } }
 
 .form .container {
-  padding-top: 5.5rem;
-  padding-bottom: 5.5rem; }
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem; }
   .form .container h2 {
     font-size: 3rem;
     text-transform: uppercase;
@@ -539,18 +539,17 @@ body {
   background-color: #2c3e50; }
 
 .footer .container {
-  padding-top: 4.75rem;
-  background-color: #2c3e50; }
+  padding-top: 4.75rem; }
   .footer .container h3 {
     font-size: 1.75rem;
     text-transform: uppercase;
     color: #fff; }
   .footer .container span {
     display: inline-block;
-    width: 230px;
+    padding: 0 80px 0 80px;
     font-size: 1.125rem;
     color: #fff; }
-  @media only screen and (max-width: 64em) {
+  @media only screen and (min-width: 75em) {
     .footer .container span {
       display: inline; } }
   .footer .container .icons li {
@@ -598,20 +597,29 @@ body {
   z-index: 1050; }
 
 .content h2 {
+  margin-top: 1rem;
   font-size: 3rem;
   text-transform: uppercase;
   color: #212529; }
 
 .content hr {
   margin-top: 1.15rem;
-  margin-bottom: 1.8rem;
+  margin-bottom: 2rem;
   color: #212529; }
   .content hr:after {
     background-color: #fff;
     color: #212529; }
 
+.content p {
+  display: inline-block;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 300; }
+
 .content span {
-  display: block; }
+  display: block;
+  margin-left: 15%;
+  text-align: left; }
   .content span a {
     text-decoration: none;
     color: #18bc9c; }
@@ -640,19 +648,19 @@ body {
 @media only screen and (min-width: 64em) {
   .modal .content .fluid-img {
     width: 50%; }
-  .modal .content .p-modal {
+  .modal .content p {
     width: 50%; } }
 
 @media only screen and (min-width: 48em) {
   .modal .content .fluid-img {
     width: 70%; }
-  .modal .content .p-modal {
+  .modal .content p {
     width: 70%; } }
 
 @media only screen and (max-width: 48em) {
   .modal .content .fluid-img {
     width: 90%; }
-  .modal .content .p-modal {
+  .modal .content p {
     width: 90%; } }
 
 @media only screen and (max-width: 27.125em) {
