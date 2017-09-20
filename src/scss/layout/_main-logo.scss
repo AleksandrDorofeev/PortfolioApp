@@ -12,7 +12,7 @@
     text-transform: uppercase;
     color: $white;
   }
-  hr {
+  .star {
     margin-top: 1.85rem;
     margin-bottom: 2rem;
     color: $white;
@@ -27,6 +27,9 @@
       font-size: $font-size-md * 1.57;
       font-weight: 300;
       color: $white;
+    }
+    i {
+      font-size: .3rem;
     }
   }
   @media only screen and (max-width: 48em) {

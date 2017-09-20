@@ -1,77 +1,73 @@
-  .header {
-      width:100%;
-      background-color: $header-bg;
-      position:fixed;
-      top:0;
-      left:0;
-      z-index: 1000;
-      .container {
-        padding-top: .85rem;
-        padding-bottom: .85rem;
-      .row div {
-        .top {
-          display: inline-block;
-           letter-spacing: 0.05rem;
-           margin-left: $unit;
-           text-transform: uppercase;
-           font-weight: 700;
-           font-size: $font-size-md * 2;
-           color: $white;
-           text-decoration: none;
-        }
+.header {
+  width:100%;
+  background-color: $header-bg;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index: 1000;
+  .container {
+    padding-top: .85rem;
+    padding-bottom: .85rem;
+    .row div {
+      .top {
+        display: inline-block;
+         letter-spacing: 0.05rem;
+         margin-left: $unit;
+         text-transform: uppercase;
+         font-weight: 700;
+         font-size: $font-size-md * 2;
+         color: $white;
+         text-decoration: none;
+      }
+      .burger-menu {
+        margin-right: $unit;
+      }
+      @media only screen and (min-width: 64em) {
         .burger-menu {
-          margin-right: $unit;
+          display: none;
         }
-        @media only screen and (min-width: 64em) {
-          .burger-menu {
-            display: none;
-          }
-          .main-nav {
-            display: block !important;
-          }
+        .main-nav {
+          display: block !important;
         }
-        @media only screen and (max-width: 64em) {
-          .main-nav {
-            display: none;
-            a {
-              display: inline-block;
-              margin-left: $unit;
-            }
-          }
-        }
-        @media only screen and (max-width: 48em) {
-          .top {
-            font-size: $font-size-md * 1.1;
-          }
-          .main-nav a {
-              display: block;
-              margin-left: 0;
-              margin-bottom: .3rem;
-              &:last-child {
-                margin-bottom: 0;
-              }
+      }
+      @media only screen and (max-width: 64em) {
+        .main-nav {
+          display: none;
+          a {
+            display: inline-block;
+            margin-left: $unit;
           }
         }
       }
       @media only screen and (max-width: 48em) {
-        .row > div {
-          padding: 0;
+        .top {
+          margin-left: 0;
+          padding-top: .45rem;
+          font-size: $font-size-md * 1.1;
         }
-        .row div {
-          .top {
-            margin-left: 0;
-            padding-top: .45rem;
-          }
         .burger-menu {
             margin-right: 0;
         }
+        .main-nav a {
+            display: block;
+            margin-left: 0;
+            margin-bottom: .3rem;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+      @media only screen and (max-width: 48em) {
+        .nopadding {
+          padding: 0;
+        }
       }
     }
-  }
   @media only screen and (max-width: 64em) {
     .container {
-      padding-top: 1rem;
-      padding-bottom: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     }
   }
 }

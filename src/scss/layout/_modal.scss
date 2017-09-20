@@ -6,6 +6,9 @@
   bottom: 0;
   left: 0;
   z-index: 1050;
+  background-color: $white;
+  overflow: scroll;
+  outline: none;
 }
 .content {
   h2 {
@@ -14,7 +17,7 @@
     text-transform: uppercase;
     color: $gray-900;
   }
-  hr {
+  .star {
     margin-top: 1.15rem;
     margin-bottom: 2rem;
     color: $gray-900;
@@ -50,17 +53,6 @@
   left: 0;
 }
 
-.cabin .modal,
-.cake .modal,
-.circus .modal,
-.game .modal,
-.safe .modal,
-.submarine .modal {
-    background-color: $white;
-    overflow: scroll;
-    outline: none;
-}
-
 @media only screen and (min-width: 64em){
   .modal .content {
     .fluid-img {
@@ -89,12 +81,18 @@
     p {
       width: 90%;
     }
+    span {
+      margin-left: 5%;
+    }
   }
 }
 @media only screen and (max-width: 27.125em){
   .modal .content {
     h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
+    }
+    .star {
+      max-width: 230px;
     }
   }
 }

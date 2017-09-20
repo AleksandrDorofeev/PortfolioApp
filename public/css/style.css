@@ -109,9 +109,6 @@ textarea {
 .margin-bottom {
   margin-bottom: 1rem; }
 
-.nopadding {
-  padding: 0; }
-
 .no-scroll {
   overflow-y: hidden; }
 
@@ -327,7 +324,11 @@ textarea {
           margin-left: 1.5rem; } }
     @media only screen and (max-width: 48em) {
       .header .container .row div .top {
+        margin-left: 0;
+        padding-top: .45rem;
         font-size: 1.1rem; }
+      .header .container .row div .burger-menu {
+        margin-right: 0; }
       .header .container .row div .main-nav a {
         display: block;
         margin-left: 0;
@@ -335,13 +336,8 @@ textarea {
         .header .container .row div .main-nav a:last-child {
           margin-bottom: 0; } }
     @media only screen and (max-width: 48em) {
-      .header .container .row > div {
-        padding: 0; }
-      .header .container .row div .top {
-        margin-left: 0;
-        padding-top: .45rem; }
-      .header .container .row div .burger-menu {
-        margin-right: 0; } }
+      .header .container .nopadding {
+        padding: 0; } }
   @media only screen and (max-width: 64em) {
     .header .container {
       padding-top: 1rem;
@@ -360,11 +356,11 @@ textarea {
     font-weight: 700;
     text-transform: uppercase;
     color: #fff; }
-  .main-logo .container hr {
+  .main-logo .container .star {
     margin-top: 1.85rem;
     margin-bottom: 2rem;
     color: #fff; }
-    .main-logo .container hr:after {
+    .main-logo .container .star:after {
       background-color: #18bc9c;
       color: #fff; }
   .main-logo .container .skills span {
@@ -372,6 +368,8 @@ textarea {
     font-size: 1.57rem;
     font-weight: 300;
     color: #fff; }
+  .main-logo .container .skills i {
+    font-size: .3rem; }
   @media only screen and (max-width: 48em) {
     .main-logo .container h1 {
       font-size: 2rem; } }
@@ -391,11 +389,11 @@ textarea {
     font-size: 3rem;
     text-transform: uppercase;
     color: #212529; }
-  .portfolio .container hr {
+  .portfolio .container .star {
     margin-top: 1.15rem;
     margin-bottom: 1.8rem;
     color: #212529; }
-    .portfolio .container hr:after {
+    .portfolio .container .star:after {
       background-color: #fff;
       color: #212529; }
   .portfolio .container .portfolio-link {
@@ -444,15 +442,13 @@ textarea {
     font-size: 3rem;
     text-transform: uppercase;
     color: #fff; }
-  .about .container hr {
+  .about .container .star {
     margin-top: 1.5rem;
     margin-bottom: 1.8rem;
     color: #fff; }
-    .about .container hr:after {
+    .about .container .star:after {
       background-color: #18bc9c;
       color: #fff; }
-  .about .container .row {
-    margin-bottom: 1.5rem; }
   .about .container .article {
     -webkit-column-count: 2;
        -moz-column-count: 2;
@@ -491,11 +487,11 @@ textarea {
     font-size: 3rem;
     text-transform: uppercase;
     color: #212529; }
-  .form .container hr {
+  .form .container .star {
     margin-top: 1.5rem;
     margin-bottom: 1.8rem;
     color: #212529; }
-    .form .container hr:after {
+    .form .container .star:after {
       background-color: #fff;
       color: #212529; }
   .form .container .form {
@@ -552,9 +548,6 @@ textarea {
     padding: 0 80px 0 80px;
     font-size: 1.125rem;
     color: #fff; }
-  @media only screen and (min-width: 75em) {
-    .footer .container span {
-      display: inline; } }
   .footer .container .icons li {
     display: inline-block;
     margin-left: 8px;
@@ -574,6 +567,8 @@ textarea {
     .footer .container .icons li:hover {
       background: white; }
   @media only screen and (max-width: 48em) {
+    .footer .container span {
+      padding: 0; }
     .footer .container .icons li {
       margin-left: 5px; } }
   .footer .container .link {
@@ -587,7 +582,7 @@ textarea {
     font-weight: 300;
     color: #fff; }
   @media only screen and (max-width: 64em) {
-    .footer .container .row > div {
+    .footer .container .margin-bottom-sm {
       margin-bottom: 2.5rem; } }
 
 .modal {
@@ -597,7 +592,10 @@ textarea {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050; }
+  z-index: 1050;
+  background-color: #fff;
+  overflow: scroll;
+  outline: none; }
 
 .content h2 {
   margin-top: 1rem;
@@ -605,11 +603,11 @@ textarea {
   text-transform: uppercase;
   color: #212529; }
 
-.content hr {
+.content .star {
   margin-top: 1.15rem;
   margin-bottom: 2rem;
   color: #212529; }
-  .content hr:after {
+  .content .star:after {
     background-color: #fff;
     color: #212529; }
 
@@ -638,16 +636,6 @@ textarea {
   top: 0;
   left: 0; }
 
-.cabin .modal,
-.cake .modal,
-.circus .modal,
-.game .modal,
-.safe .modal,
-.submarine .modal {
-  background-color: #fff;
-  overflow: scroll;
-  outline: none; }
-
 @media only screen and (min-width: 64em) {
   .modal .content .fluid-img {
     width: 50%; }
@@ -664,8 +652,12 @@ textarea {
   .modal .content .fluid-img {
     width: 90%; }
   .modal .content p {
-    width: 90%; } }
+    width: 90%; }
+  .modal .content span {
+    margin-left: 5%; } }
 
 @media only screen and (max-width: 27.125em) {
   .modal .content h2 {
-    font-size: 1.5rem; } }
+    font-size: 2rem; }
+  .modal .content .star {
+    max-width: 230px; } }
