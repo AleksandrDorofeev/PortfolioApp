@@ -21,49 +21,60 @@
   .row {
     margin-bottom: 1.5rem;
   }
-  @media only screen and (min-width: 75em){
-    .left-p {
-      margin-left: 13.75rem; //220px
-      width: 380px;
-      // font-size: $font-size-lg;
-      // text-align: left;
-      // font-weight: 300;
-      // color: $white;
-    }
-    .right-p {
-      margin-left: 1rem;
-      width: 380px;
-      // font-size: $font-size-lg;
-      // text-align: left;
-      // font-weight: 300;
-      // color: $white;
+  .article {
+    column-count: 2;
+    column-gap: 25px;
+    padding: 0 15% 0 15%;
+    hyphens: auto;
+    font-size: $font-size-lg;
+    text-align: left;
+    font-weight: 300;
+    color: $white;
+  }
+//   @media only screen and (min-width: 75em){
+//     .left-p {
+//       margin-left: 13.75rem; //220px
+//       width: 380px;
+//       // font-size: $font-size-lg;
+//       // text-align: left;
+//       // font-weight: 300;
+//       // color: $white;
+//     }
+//     .right-p {
+//       margin-left: 1rem;
+//       width: 380px;
+//       // font-size: $font-size-lg;
+//       // text-align: left;
+//       // font-weight: 300;
+//       // color: $white;
+//     }
+//   }
+//   @media only screen and (min-width: 64em) and (max-width: 75em) {
+//     .left-p {
+//       margin-left: 8.125rem; //130px
+//       width: 380px;
+//       // font-size: $font-size-lg;
+//       // text-align: left;
+//       // font-weight: 300;
+//       // color: $white;
+//     }
+//     .right-p {
+//       width: 365px;
+//       //font-size: $font-size-lg;
+//       //text-align: left;
+//       //font-weight: 300;
+//       //color: $white;
+//     }
+//   }
+  @media only screen and (max-width: 64em) {
+    .article {
+      padding: 0;
+      column-count: 1;
+      hyphens: auto;
+      font-size: $font-size-lg;
+      text-align: left;
+      font-weight: 300;
+      color: $white;
     }
   }
-  @media only screen and (min-width: 64em) and (max-width: 75em) {
-    .left-p {
-      margin-left: 8.125rem; //130px
-      width: 380px;
-      // font-size: $font-size-lg;
-      // text-align: left;
-      // font-weight: 300;
-      // color: $white;
-    }
-    .right-p {
-      width: 365px;
-      //font-size: $font-size-lg;
-      //text-align: left;
-      //font-weight: 300;
-      //color: $white;
-    }
-  }
-  // @media only screen and (max-width: 64em) {
-  //   .left-p,
-  //   .right-p {
-  //     hyphens: auto;
-  //     font-size: $font-size-lg;
-  //     text-align: left;
-  //     font-weight: 300;
-  //     color: $white;
-  //   }
-  // }
 }

@@ -34,11 +34,11 @@ $(document).ready(function() {
         if ($(window).width() >= 1200) {
           $('body,html').animate({ scrollTop: top }, 1000, 'easeInOutQuint');
          }else if ($(window).width() < 1200) {
-           $('body,html').animate({ scrollTop: top - 5 }, 1000, 'easeInOutQuint');
+           $('body,html').animate({ scrollTop: top }, 1000, 'easeInOutQuint');
          }else if ($(window).width() < 1024) {
-           $('body,html').animate({ scrollTop: top + 20 }, 1000, 'easeInOutQuint');
+           $('body,html').animate({ scrollTop: top + 40 }, 1000, 'easeInOutQuint');
          }else if ($(window).width() < 768) {
-           $('body,html').animate({ scrollTop: top + 15 }, 1000, 'easeInOutQuint');
+           $('body,html').animate({ scrollTop: top + 20 }, 1000, 'easeInOutQuint');
          };
     });
 

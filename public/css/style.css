@@ -109,6 +109,9 @@ textarea {
 .margin-bottom {
   margin-bottom: 1rem; }
 
+.nopadding {
+  padding: 0; }
+
 .no-scroll {
   overflow-y: hidden; }
 
@@ -276,17 +279,6 @@ textarea {
   padding: 5px; }
   .icon i:hover {
     color: #18bc9c; }
-
-.left-p,
-.right-p {
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-      -ms-hyphens: auto;
-          hyphens: auto;
-  font-size: 1.25rem;
-  text-align: left;
-  font-weight: 300;
-  color: #fff; }
 
 .main-nav {
   margin-top: 0.75rem; }
@@ -461,19 +453,36 @@ textarea {
       color: #fff; }
   .about .container .row {
     margin-bottom: 1.5rem; }
-  @media only screen and (min-width: 75em) {
-    .about .container .left-p {
-      margin-left: 13.75rem;
-      width: 380px; }
-    .about .container .right-p {
-      margin-left: 1rem;
-      width: 380px; } }
-  @media only screen and (min-width: 64em) and (max-width: 75em) {
-    .about .container .left-p {
-      margin-left: 8.125rem;
-      width: 380px; }
-    .about .container .right-p {
-      width: 365px; } }
+  .about .container .article {
+    -webkit-column-count: 2;
+       -moz-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 25px;
+       -moz-column-gap: 25px;
+            column-gap: 25px;
+    padding: 0 15% 0 15%;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    font-size: 1.25rem;
+    text-align: left;
+    font-weight: 300;
+    color: #fff; }
+  @media only screen and (max-width: 64em) {
+    .about .container .article {
+      padding: 0;
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1;
+      -webkit-hyphens: auto;
+         -moz-hyphens: auto;
+          -ms-hyphens: auto;
+              hyphens: auto;
+      font-size: 1.25rem;
+      text-align: left;
+      font-weight: 300;
+      color: #fff; } }
 
 .form .container {
   padding-top: 6.25rem;
@@ -492,9 +501,7 @@ textarea {
   .form .container .form {
     padding-left: 10%;
     margin-right: 10%; }
-  .form .container .form input[type="text"],
-  .form .container .form input[type="email"],
-  .form .container .form input[type="number"],
+  .form .container .form .control,
   .form .container .form textarea {
     display: block;
     width: 80%;
@@ -516,9 +523,7 @@ textarea {
     .form .container .form {
       padding-left: 5%;
       margin-right: 5%; }
-    .form .container .form input[type="text"],
-    .form .container .form input[type="email"],
-    .form .container .form input[type="number"],
+    .form .container .form .control,
     .form .container .form textarea {
       width: 90%; }
     .form .container .form input[type="submit"] {
@@ -527,9 +532,7 @@ textarea {
     .form .container .form {
       padding-left: 1%;
       margin-right: 1%; }
-    .form .container .form input[type="text"],
-    .form .container .form input[type="email"],
-    .form .container .form input[type="number"],
+    .form .container .form .control,
     .form .container .form textarea {
       width: 98%; }
     .form .container .form input[type="submit"] {
