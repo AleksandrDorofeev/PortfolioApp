@@ -12,7 +12,6 @@
       .top {
         display: inline-block;
          letter-spacing: 0.05rem;
-         margin-left: $unit;
          text-transform: uppercase;
          font-weight: 700;
          font-size: $font-size-md * 2;
@@ -31,6 +30,9 @@
         }
       }
       @media only screen and (max-width: 64em) {
+        .top {
+          font-size: $font-size-md * 1.7;
+        }
         .main-nav {
           display: none;
           a {
@@ -57,6 +59,14 @@
             }
           }
         }
+      @media only screen and (max-width: 24em) {
+        .top {
+          padding-top: 0;
+        }
+        .burger-menu {
+          margin-top: .45rem;
+        }
+      }
       }
       @media only screen and (max-width: 48em) {
         .nopadding {

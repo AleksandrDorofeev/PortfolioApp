@@ -32,6 +32,11 @@
       font-size: .3rem;
     }
   }
+  @media only screen and (max-width: 64em) {
+    h1 {
+      font-size: $font-size-md * 3;
+    }
+  }
   @media only screen and (max-width: 48em) {
     h1 {
       font-size: $font-size-md * 2;
@@ -41,11 +46,11 @@
 
 @media only screen and (max-width: 64em) {
   .main-logo .container {
-    padding-top: 7.75rem;
+    padding-top: 8.75rem;
   }
 }
 @media only screen and (max-width: 48em) {
   .main-logo .container {
-    padding-top: 5.75rem;
+    padding-top: 6.50rem;
   }
 }

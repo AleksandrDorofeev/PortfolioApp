@@ -303,7 +303,6 @@ textarea {
     .header .container .row div .top {
       display: inline-block;
       letter-spacing: 0.05rem;
-      margin-left: 1.5rem;
       text-transform: uppercase;
       font-weight: 700;
       font-size: 2rem;
@@ -317,6 +316,8 @@ textarea {
       .header .container .row div .main-nav {
         display: block !important; } }
     @media only screen and (max-width: 64em) {
+      .header .container .row div .top {
+        font-size: 1.7rem; }
       .header .container .row div .main-nav {
         display: none; }
         .header .container .row div .main-nav a {
@@ -335,6 +336,11 @@ textarea {
         margin-bottom: .3rem; }
         .header .container .row div .main-nav a:last-child {
           margin-bottom: 0; } }
+    @media only screen and (max-width: 24em) {
+      .header .container .row div .top {
+        padding-top: 0; }
+      .header .container .row div .burger-menu {
+        margin-top: .45rem; } }
     @media only screen and (max-width: 48em) {
       .header .container .nopadding {
         padding: 0; } }
@@ -370,17 +376,20 @@ textarea {
     color: #fff; }
   .main-logo .container .skills i {
     font-size: .3rem; }
+  @media only screen and (max-width: 64em) {
+    .main-logo .container h1 {
+      font-size: 3rem; } }
   @media only screen and (max-width: 48em) {
     .main-logo .container h1 {
       font-size: 2rem; } }
 
 @media only screen and (max-width: 64em) {
   .main-logo .container {
-    padding-top: 7.75rem; } }
+    padding-top: 8.75rem; } }
 
 @media only screen and (max-width: 48em) {
   .main-logo .container {
-    padding-top: 5.75rem; } }
+    padding-top: 6.50rem; } }
 
 .portfolio .container {
   padding-top: 6.25rem;
@@ -456,7 +465,7 @@ textarea {
     -webkit-column-gap: 25px;
        -moz-column-gap: 25px;
             column-gap: 25px;
-    padding: 0 15% 0 15%;
+    padding: 0 14% 0 14%;
     -webkit-hyphens: auto;
        -moz-hyphens: auto;
         -ms-hyphens: auto;
@@ -538,21 +547,16 @@ textarea {
   background-color: #2c3e50; }
 
 .footer .container {
-  padding-top: 4.75rem; }
+  padding-top: 2.75rem; }
   .footer .container h3 {
     font-size: 1.75rem;
     text-transform: uppercase;
     color: #fff; }
-  .footer .container span {
-    display: inline-block;
-    padding: 0 80px 0 80px;
-    font-size: 1.125rem;
-    color: #fff; }
   .footer .container .icons li {
     display: inline-block;
     margin-left: 8px;
-    width: 46px;
-    height: 46px;
+    width: 44px;
+    height: 44px;
     border: 2px solid white;
     font-size: 20px;
     -webkit-border-radius: 100%;
@@ -578,6 +582,8 @@ textarea {
       color: #18bc9c; }
   .footer .container .copyright {
     margin-top: 2rem;
+    margin-bottom: 0;
+    padding-bottom: 1rem;
     font-size: 0.9rem;
     font-weight: 300;
     color: #fff; }

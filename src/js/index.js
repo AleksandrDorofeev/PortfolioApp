@@ -65,6 +65,19 @@ $(document).ready(function() {
       }
     );
   });
+  $(document).on('keyup', function(evt) {
+    if (evt.keyCode == 27) {
+      event.preventDefault();
+      $('.cabin .modal')
+        .animate({opacity: 0, scrollTop: 0}, "fast",
+          function() {
+          $(this).css('display', 'none')
+          $('.overlay').fadeOut(400)
+          $("body").removeClass("no-scroll")
+        }
+      );
+    }
+  });
 
   $("a#cake").click(function(event) {
     event.preventDefault();
@@ -87,6 +100,19 @@ $(document).ready(function() {
         $("body").removeClass("no-scroll")
       }
     );
+  });
+  $(document).on('keyup', function(evt) {
+    if (evt.keyCode == 27) {
+      event.preventDefault();
+      $('.cake .modal')
+        .animate({opacity: 0, scrollTop: 0}, "fast",
+          function() {
+          $(this).css('display', 'none')
+          $('.overlay').fadeOut(400)
+          $("body").removeClass("no-scroll")
+        }
+      );
+    }
   });
 
   $("a#circus").click(function(event) {
@@ -111,6 +137,19 @@ $(document).ready(function() {
       }
     );
   });
+  $(document).on('keyup', function(evt) {
+    if (evt.keyCode == 27) {
+      event.preventDefault();
+      $('.circus .modal')
+        .animate({opacity: 0, scrollTop: 0}, "fast",
+          function() {
+          $(this).css('display', 'none')
+          $('.overlay').fadeOut(400)
+          $("body").removeClass("no-scroll")
+        }
+      );
+    }
+  });
 
   $("a#game").click(function(event) {
     event.preventDefault();
@@ -133,6 +172,19 @@ $(document).ready(function() {
         $("body").removeClass("no-scroll")
       }
     );
+  });
+  $(document).on('keyup', function(evt) {
+    if (evt.keyCode == 27) {
+      event.preventDefault();
+      $('.game .modal')
+        .animate({opacity: 0, scrollTop: 0}, "fast",
+          function() {
+          $(this).css('display', 'none')
+          $('.overlay').fadeOut(400)
+          $("body").removeClass("no-scroll")
+        }
+      );
+    }
   });
 
   $("a#safe").click(function(event) {
@@ -157,6 +209,19 @@ $(document).ready(function() {
       }
     );
   });
+  $(document).on('keyup', function(evt) {
+    if (evt.keyCode == 27) {
+      event.preventDefault();
+      $('.safe .modal')
+        .animate({opacity: 0, scrollTop: 0}, "fast",
+          function() {
+          $(this).css('display', 'none')
+          $('.overlay').fadeOut(400)
+          $("body").removeClass("no-scroll")
+        }
+      );
+    }
+  });
 
   $("a#submarine").click(function(event) {
     event.preventDefault();
@@ -180,6 +245,20 @@ $(document).ready(function() {
       }
     );
   });
+  $(document).on('keyup', function(evt) {
+    if (evt.keyCode == 27) {
+      event.preventDefault();
+      $('.submarine .modal')
+        .animate({opacity: 0, scrollTop: 0}, "fast",
+          function() {
+          $(this).css('display', 'none')
+          $('.overlay').fadeOut(400)
+          $("body").removeClass("no-scroll")
+        }
+      );
+    }
+  });
+
   // Scrollup btn
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {
